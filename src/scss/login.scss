@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap');
+.font{
+font-size: 56px;
+color: rgba(2, 181, 137, 1)  ;
+font-family: 'Lobster', cursive;
+}
+.Boginoo{
+    width: 184px;
+    height: 140px;
+}
+.bgcg{
+    color: rgba(2, 181, 137, 1)  ;
+}
+.column{
+    display: flex;
+    flex-direction: column; 
+}
+.email{
+    background-color: #F0F0F0;
+    width: 381px;
+    height: 44px;
+    top: 456px;
+    left: 529px;
+    border-radius: 100px;
+    padding: 5px;
+}  
+.saaral {
+   background-color:  rgba(255, 255, 255, 1);
+    width: 381px;
+    height: 44px;
+    top: 456px;
+    left: 529px;
+    border-radius: 100px;
+    font-family: 'Gowun Batang', serif;
+    border: 1px solid gray;
+}
+.fontn{
+    font-family: 'Gowun Batang', serif;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.b100{
+    height: 100vw;
+}
+.space{
+    display: flex;
+    justify-content: space-around;
+}
+.bgcgw{
+    color: white;
+    font-size: 20px;
+    background-color: rgba(2, 181, 137, 1);
+    border-radius: 100px;
+    height: 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
