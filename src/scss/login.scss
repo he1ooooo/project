@@ -1,9 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap');
 .font{
 font-size: 56px;
 color: rgba(2, 181, 137, 1)  ;
 font-family: 'Lobster', cursive;
+}
+.rows{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 20%;
 }
 .Boginoo{
     width: 184px;
@@ -11,10 +18,17 @@ font-family: 'Lobster', cursive;
 }
 .bgcg{
     color: rgba(2, 181, 137, 1)  ;
+    font-size: 40px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.greeen{
+        color: rgba(2, 181, 137, 1)  ;
+        font-family: 'Gowun Batang', serif;
 }
 .column{
     display: flex;
     flex-direction: column; 
+
 }
 .email{
     background-color: #F0F0F0;
@@ -38,6 +52,12 @@ font-family: 'Lobster', cursive;
 .fontn{
     font-family: 'Gowun Batang', serif;
 }
+.durv{
+    width: 20px;
+    height: 20px;
+    border: rgba(2, 181, 137, 1) 1px solid;
+    border-radius: 4px;
+}
 .center{
     display: flex;
     justify-content: center;
@@ -49,6 +69,7 @@ font-family: 'Lobster', cursive;
 .space{
     display: flex;
     justify-content: space-around;
+    height: 700px;
 }
 .bgcgw{
     color: white;
@@ -56,6 +77,7 @@ font-family: 'Lobster', cursive;
     background-color: rgba(2, 181, 137, 1);
     border-radius: 100px;
     height: 43px;
+    width: 383px;
     display: flex;
     justify-content: center;
     align-items: center;

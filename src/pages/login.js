@@ -1,27 +1,27 @@
-import "../scss/login.scss"
-import huv from "../zurag.png"
-import Gmail from "../components/gmail"
+import "../scss/login.scss";
+import Logo from "../components/logo";
+import Nmaig from "../components/nmaig";
+import Password from "../components/pass";
+import Gmail from "../components/gmail";
+import New from "../components/new";
+import { useFirebase } from "../hooks./firebase";
 const Login = () => {
-    return (
-        <div className="center space">
-        <div className="column ">
-            <div className="Boginoo cen">
-            <img src={huv} />
-                <div className="font">Boginoo</div>
-            </div>
-            <div className="bgcg">Нэвтрэх</div>
+  const { auth } = useFirebase();
 
-            <Gmail>Цахим хаяг</Gmail>
-
-            <input className="saaral"></input>
-
-            <label className="nuutsug fontn">Нууц үг</label   >
-
-            <input className="saaral"></input>
-
-            <div className="bgcgw">Нэвтрэх</div>
-        </div>
-        </div>
-    )
-}
+  const login = async () => {
+      let user = await auth.createUserWithEmailAndPassword('test@gmail.com', '1234567')
+      console.log(user)
+  }
+  return (
+    <div className="column center space">
+      <Logo />
+      <div className="bgcg">Нэвтрэх</div>
+      <Gmail />
+      <Password />
+      <Nmaig />
+      <div onClick={login} className="bgcgw">Нэвтрэх</div>
+      <New />
+    </div>
+  );
+};
 export default Login;
