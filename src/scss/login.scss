@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 .font{
 font-size: 56px;
 color: rgba(2, 181, 137, 1)  ;
@@ -11,6 +11,11 @@ font-family: 'Lobster', cursive;
     justify-content: space-around;
     flex-direction: row;
     width: 20%;
+}
+.fontsa{
+    font-size:16px ;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(69, 69, 69);
 }
 .Boginoo{
     width: 184px;
@@ -23,7 +28,7 @@ font-family: 'Lobster', cursive;
 }
 .greeen{
         color: rgba(2, 181, 137, 1)  ;
-        font-family: 'Gowun Batang', serif;
+        font-family: 'Ubuntu', sans-serif;
 }
 .column{
     display: flex;
@@ -35,6 +40,7 @@ font-family: 'Lobster', cursive;
     width: 381px;
     height: 44px;
     top: 456px;
+    font-family: 'Ubuntu', sans-serif;
     left: 529px;
     border-radius: 100px;
     padding: 5px;
@@ -46,7 +52,7 @@ font-family: 'Lobster', cursive;
     top: 456px;
     left: 529px;
     border-radius: 100px;
-    font-family: 'Gowun Batang', serif;
+    font-family: 'Ubuntu', sans-serif;
     border: 1px solid gray;
 }
 .fontn{
@@ -81,4 +87,30 @@ font-family: 'Lobster', cursive;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.wbgcgw{
+    color: white;
+    font-size: 20px;
+    background-color: rgba(2, 181, 137, 1);
+    border-radius: 100px;
+    height: 44px;
+    width: 192px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Ubuntu', sans-serif;
+    align-items: center;
+    border:1px solid rgba(2, 181, 137, 1);
+}
+
+.wsaaral{
+    background-color:rgba(255, 255, 255, 1);
+     width:581px;
+     height: 44px;
+     top: 456px;
+     left: 529px;
+     font-family: 'Ubuntu', sans-serif;
+     border-radius: 100px;
+     border: 1px solid gray;
 }

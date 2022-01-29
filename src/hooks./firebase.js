@@ -15,11 +15,10 @@ const firebaseConfig = {
 export const useFirebase = () => {
   const [state, setState] = useState(null);
   let app;
-
   useEffect(() => {
     if (!firebase.apps.length) app = firebase.initializeApp(firebaseConfig);
     let firestore = firebase.firestore();
-    let auth = firebase.auth()
+    let auth = firebase.auth();
     setState({ firestore, app, auth });
   }, []);
 
@@ -27,28 +26,28 @@ export const useFirebase = () => {
     ...state,
   };
 };
-export const useCollection = (path) => {
-  const { firestore } = useFirebase();
-  const [data, setData] = useState([]);
-  useEffect(() => {
-    if (!firestore) return;
-    let unSubscribe = firestore.collection(path).onSnapshot((query) => {
-      setData(query.docs.map((doc) => doc.data()));
-    });
+// export const useCollection = (path) => {
+//   const { firestore } = useFirebase();
+//   const [data, setData] = useState([]);
+//   useEffect(() => {
+//     if (!firestore) return;
+//     let unSubscribe = firestore.collection(path).onSnapshot((query) => {
+//       setData(query.docs.map((doc) => doc.data()));
+//     });
 
-    return () => unSubscribe(); 
-  }, [firestore]);
+//     return () => unSubscribe(); 
+//   }, [firestore]);
 
-  const createDocument = async (auth) => {
-    let doc = await firestore.collection(path).add(data);
-    return doc;
-  }
+//   const createDocument = async (auth) => {
+//     let doc = await firestore.collection(path).add(data);
+//     return doc;
+//   }
 
-  return {
-    data,
-    createDocument
-  };
-};
+//   return {
+//     data,
+//     createDocument
+//   };
+// };
 
 // export const useDoc = async (path) => {
 //   const { firestore } = useFirebase();

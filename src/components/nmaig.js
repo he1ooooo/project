@@ -7,7 +7,6 @@ const Nmaig = () => {
             <div className="">Нууц үгээ мартсан</div>
         </div>
     )
-
-}
-
+    };
+    
 export default Nmaig;
